@@ -44,3 +44,17 @@ Balancing Precision and Recall with the F-beta Score
     
     f_score_value = (1 + beta**2) * (precision * recall) / ((beta**2 * precision) + recall)
     return round(f_score_value, 3)
+
+    # Solution 2
+    true_positives = np.sum((y_true == 1) & (y_pred == 1))
+    false_negatives = np.sum((y_true == 1) & (y_pred == 0))
+    false_positives = np.sum((y_true == 0) & (y_pred == 1))
+	
+    precision = true_positives/(true_positives+false_positives) if (true_positives+false_positives)>0 else 0
+    recall = true_positives/(true_positives+false_negatives) if (true_positives+false_negatives)>0 else 0
+
+    if precision == 0 and recall == 0: 
+	return 0.0
+
+    fscore = (1 + beta**2) * (precision * recall) / (beta**2*precision) + recall
+	return fscore
