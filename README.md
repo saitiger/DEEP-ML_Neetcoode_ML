@@ -5,3 +5,4 @@ Solutions to DEEP-ML and Neetcode Machine Learning
 
 # Contributed Questions to DEEP-ML
 - [RMSE](https://www.deep-ml.com/problem/Calculate%20Root%20Mean%20Square%20Error)
+- [Cosine Similarity](https://www.deep-ml.com/problem/Cosine%20Similarity) 
