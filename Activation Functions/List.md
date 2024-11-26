@@ -1,0 +1,13 @@
+- Linear 
+- Sigmoid
+- TanH
+- ArcTan
+- ReLU
+- Leaky ReLU
+- Parametric ReLU
+- Maxout
+- ELU
+- GELU
+- SELU
+- Softmax
+- SoftPlus
