@@ -10,4 +10,5 @@
 - GELU
 - SELU
 - Softmax
+- Log Softmax
 - SoftPlus
